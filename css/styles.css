@@ -90,6 +90,9 @@ body {
 .site-nav .link.current {
   color: var(--logo-color);
 }
+.mail {
+  display: flex;
+}
 
 .link {
   display: block;
@@ -124,7 +127,11 @@ body {
 .link-contact:focus {
   color: var(--logo-color);
 }
+.mail-title {
+  display: block;
+}
 .mail-icon {
+
   vertical-align: middle;
   margin-right: 10px;
   fill: currentColor;
@@ -152,7 +159,7 @@ body {
   linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),
   url(../images/bimage.png);
   background-repeat: no-repeat;
-  block-size: cover;
+  background-size: cover;
   background-position: center;
   margin-left: auto;
   margin-right: auto;
@@ -167,7 +174,6 @@ body {
   margin-bottom: 30px;
 }
 .hero-btn {
-  display: inline-block;
   min-width: 216px;
   padding: 10px 32px;
   border-color: transparent;
@@ -181,10 +187,12 @@ body {
   color: var(--primary-bgr);
   cursor: pointer;
   border-radius: 4px;
+  
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: var(--hero-button);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .section {
   padding-top: 94px;
